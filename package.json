@@ -1,0 +1,30 @@
+{
+	"name": "push-secrets",
+	"version": "1.0.1",
+	"description": "A tool for pushing secrets from a local .env file to a GitHub repository.",
+	"main": "./push-secrets",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itsbrex/push-env-to-github-secrets.git"
+	},
+	"keywords": [
+		"env",
+		"github",
+		"secrets"
+	],
+	"author": "Brian Roach",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/itsbrex/push-env-to-github-secrets/issues"
+	},
+	"homepage": "https://github.com/itsbrex/push-env-to-github-secrets#readme",
+	"dependencies": {
+		"gh": "^2.8.9"
+	},
+	"bin": {
+		"push-secrets": "./push-secrets"
+	}
+}
