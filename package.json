@@ -1,6 +1,6 @@
 {
 	"name": "push-secrets",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A tool for pushing secrets from a local .env file to a GitHub repository.",
 	"main": "./push-secrets",
 	"scripts": {
@@ -22,7 +22,11 @@
 	},
 	"homepage": "https://github.com/itsbrex/push-env-to-github-secrets#readme",
 	"dependencies": {
-		"gh": "^2.8.9"
+		"dotenv": "^16.0.3",
+		"gh": "^2.8.9",
+		"gh-cli": "^0.0.1",
+		"git-remote-origin-url": "^4.0.0",
+		"git-repo-name": "^1.0.1"
 	},
 	"bin": {
 		"push-secrets": "./push-secrets"
