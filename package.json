@@ -2,9 +2,10 @@
 	"name": "push-secrets",
 	"version": "1.0.5",
 	"description": "A tool for pushing secrets from a local .env file to a GitHub repository.",
+	"type": "module",
 	"main": "./push-secrets",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "jest"
 	},
 	"repository": {
 		"type": "git",
@@ -26,10 +27,16 @@
 		"gh": "^2.8.9",
 		"gh-cli": "^0.0.1",
 		"git-remote-origin-url": "^4.0.0",
-		"git-repo-name": "^1.0.1"
+		"git-repo-name": "^1.0.1",
+		"jest": "^29.3.1"
 	},
 	"bin": {
 		"push-secrets": "./push-secrets"
 	},
-	"types": "./index.d.ts"
+	"types": "./index.d.ts",
+	"jest": {
+		"transformIgnorePatterns": [
+			"node_modules/git-remote-origin-url"
+		]
+	}
 }
