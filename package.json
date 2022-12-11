@@ -1,6 +1,6 @@
 {
 	"name": "push-secrets",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A tool for pushing secrets from a local .env file to a GitHub repository.",
 	"main": "./push-secrets",
 	"scripts": {
